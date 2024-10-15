@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Title and URL",
+  "version": "1.0",
+  "description": "Click to copy the page title and URL to clipboard.",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Copy Title and URL",
+    "default_icon": "icon.png"
+  }
+}
